@@ -15,17 +15,28 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gpa-calculator-title" translatesAutoresizingMaskIntoConstraints="NO" id="PkD-Cv-JpM">
-                                <rect key="frame" x="26" y="20" width="554" height="114"/>
+                                <rect key="frame" x="22" y="20" width="282" height="114"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QbF-YH-WVv">
-                                <rect key="frame" x="20" y="142" width="560" height="400"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QbF-YH-WVv" userLabel="gray background">
+                                <rect key="frame" x="16" y="142" width="288" height="400"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chalkboard" translatesAutoresizingMaskIntoConstraints="NO" id="1s3-tZ-PRH">
+                                        <rect key="frame" x="7" y="110" width="275" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="275" id="KlO-B4-IwA"/>
+                                            <constraint firstAttribute="height" constant="180" id="Z6O-UW-4sD"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" red="0.75686274509803919" green="0.75686274509803919" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="BPp-7N-oBt"/>
+                                    <constraint firstItem="1s3-tZ-PRH" firstAttribute="centerY" secondItem="QbF-YH-WVv" secondAttribute="centerY" id="9mV-aR-3c9"/>
+                                    <constraint firstAttribute="height" constant="400" id="C8X-4G-ZHy"/>
+                                    <constraint firstItem="1s3-tZ-PRH" firstAttribute="centerX" secondItem="QbF-YH-WVv" secondAttribute="centerX" id="uug-16-uI1"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -39,6 +50,7 @@
                             <constraint firstItem="QbF-YH-WVv" firstAttribute="top" secondItem="PkD-Cv-JpM" secondAttribute="bottom" constant="8" id="p7z-ZO-evl"/>
                         </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -46,6 +58,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chalkboard" width="446" height="295"/>
         <image name="gpa-calculator-title" width="764" height="114"/>
     </resources>
 </document>
