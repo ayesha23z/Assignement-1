@@ -63,23 +63,23 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Point" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MgV-tc-doc">
-                                        <rect key="frame" x="229" y="52" width="39" height="36"/>
-                                        <color key="backgroundColor" red="0.28627450980392155" green="0.69411764705882351" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.082352941176470587" green="0.10588235294117647" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0u-Lj-EAm">
-                                        <rect key="frame" x="371" y="52" width="39" height="36"/>
+                                        <rect key="frame" x="338.5" y="52" width="104" height="36"/>
                                         <color key="backgroundColor" red="0.3411764706" green="0.75294117650000003" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.082352941176470587" green="0.10588235294117647" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYU-hh-TWd">
-                                        <rect key="frame" x="513" y="52" width="39" height="36"/>
+                                        <rect key="frame" x="448" y="52" width="104" height="36"/>
                                         <color key="backgroundColor" red="0.3411764706" green="0.75294117650000003" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.082352941176470587" green="0.10588235294117647" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Point" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MgV-tc-doc">
+                                        <rect key="frame" x="229" y="52" width="104" height="36"/>
+                                        <color key="backgroundColor" red="0.28627450980392155" green="0.69411764705882351" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.082352941176470587" green="0.10588235294117647" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -90,6 +90,7 @@
                                     <constraint firstItem="pYU-hh-TWd" firstAttribute="width" secondItem="V0u-Lj-EAm" secondAttribute="width" id="0nz-Wt-8My"/>
                                     <constraint firstItem="V0u-Lj-EAm" firstAttribute="height" secondItem="MgV-tc-doc" secondAttribute="height" id="2kN-tX-cS3"/>
                                     <constraint firstAttribute="height" constant="400" id="C8X-4G-ZHy"/>
+                                    <constraint firstItem="MgV-tc-doc" firstAttribute="trailing" secondItem="yVB-u0-eCm" secondAttribute="trailing" multiplier="0.6" constant="2" id="E13-Tc-RnJ"/>
                                     <constraint firstItem="pYU-hh-TWd" firstAttribute="trailing" secondItem="yVB-u0-eCm" secondAttribute="trailing" id="FTK-WR-M19"/>
                                     <constraint firstItem="uWC-6G-qiy" firstAttribute="height" secondItem="p1x-xo-bSc" secondAttribute="height" id="HgS-8z-Lv7"/>
                                     <constraint firstItem="P2k-PZ-OTT" firstAttribute="width" secondItem="uWC-6G-qiy" secondAttribute="width" id="JJn-xM-smF"/>
