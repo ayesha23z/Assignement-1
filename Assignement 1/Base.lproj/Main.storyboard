@@ -39,6 +39,9 @@
                                         <state key="normal" title="Delete Course">
                                             <color key="titleColor" red="0.066666666666666666" green="0.047058823529411764" blue="0.50588235294117645" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="deleteCoursePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ghf-XH-hOh"/>
+                                        </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chalkboard" translatesAutoresizingMaskIntoConstraints="NO" id="1s3-tZ-PRH">
                                         <rect key="frame" x="143" y="209" width="275" height="175"/>
@@ -177,6 +180,9 @@
                                         <state key="normal" title="Add Course">
                                             <color key="titleColor" red="0.08235294371843338" green="0.10588235408067703" blue="0.55294120311737061" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="addCoursePress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dv7-pW-5lt"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credits" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBF-ED-3ij">
                                         <rect key="frame" x="229" y="173" width="213" height="25"/>
@@ -227,8 +233,8 @@
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="2Ds-4D-sZm"/>
-                                                <exclude reference="cQg-AS-19j"/>
                                                 <exclude reference="6lK-Ou-pXy"/>
+                                                <exclude reference="cQg-AS-19j"/>
                                             </mask>
                                         </variation>
                                     </imageView>
@@ -242,8 +248,8 @@
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="6fi-l6-DdR"/>
-                                                <exclude reference="Xny-mX-wBB"/>
                                                 <exclude reference="MvV-4Z-6Qs"/>
+                                                <exclude reference="Xny-mX-wBB"/>
                                             </mask>
                                         </variation>
                                     </imageView>
@@ -255,8 +261,8 @@
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
-                                                <exclude reference="anf-Mv-arf"/>
                                                 <exclude reference="Uwl-Um-ite"/>
+                                                <exclude reference="anf-Mv-arf"/>
                                             </mask>
                                         </variation>
                                     </imageView>
@@ -266,6 +272,14 @@
                                         <color key="textColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hln-5a-a4u">
+                                        <rect key="frame" x="168" y="392" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="Prq-c5-aPL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.75686274509803919" green="0.75686274509803919" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -290,6 +304,7 @@
                                     <constraint firstItem="AGy-2L-Cvj" firstAttribute="centerY" secondItem="fEE-3C-pGH" secondAttribute="centerY" id="9EM-W7-ZFD"/>
                                     <constraint firstItem="bu5-23-zQ9" firstAttribute="height" secondItem="kLJ-cS-4gc" secondAttribute="height" id="9n8-Bn-3NE"/>
                                     <constraint firstItem="ofK-AH-ZLN" firstAttribute="leading" secondItem="PT6-5u-izI" secondAttribute="leading" id="9nZ-IQ-8Gp"/>
+                                    <constraint firstItem="Hln-5a-a4u" firstAttribute="centerY" secondItem="p1x-xo-bSc" secondAttribute="centerY" id="9xk-jo-1pw"/>
                                     <constraint firstItem="ofK-AH-ZLN" firstAttribute="height" secondItem="PT6-5u-izI" secondAttribute="height" id="AO4-1h-Dgc"/>
                                     <constraint firstItem="G2Y-gm-5BV" firstAttribute="width" secondItem="9Ng-rF-7Mr" secondAttribute="width" id="BJW-mZ-4XV"/>
                                     <constraint firstItem="aLO-Av-WCJ" firstAttribute="trailing" secondItem="DO2-2i-m2S" secondAttribute="trailing" id="C7Y-N1-Ig7"/>
@@ -302,6 +317,7 @@
                                     <constraint firstItem="MgV-tc-doc" firstAttribute="trailing" secondItem="yVB-u0-eCm" secondAttribute="trailing" multiplier="0.6" constant="2" id="E13-Tc-RnJ"/>
                                     <constraint firstItem="G2Y-gm-5BV" firstAttribute="height" secondItem="9Ng-rF-7Mr" secondAttribute="height" id="EHf-7k-UWQ"/>
                                     <constraint firstItem="y9w-Hp-1lZ" firstAttribute="height" secondItem="qlW-cx-5dj" secondAttribute="height" id="EQp-6W-0xH"/>
+                                    <constraint firstItem="Hln-5a-a4u" firstAttribute="leading" secondItem="p1x-xo-bSc" secondAttribute="trailing" constant="10" id="ElF-JV-Yii"/>
                                     <constraint firstItem="6N3-Cu-sCQ" firstAttribute="leading" secondItem="DO2-2i-m2S" secondAttribute="leading" id="FRZ-J7-BQ6"/>
                                     <constraint firstItem="pYU-hh-TWd" firstAttribute="trailing" secondItem="yVB-u0-eCm" secondAttribute="trailing" id="FTK-WR-M19"/>
                                     <constraint firstAttribute="trailing" secondItem="aLO-Av-WCJ" secondAttribute="trailing" constant="190" id="Fv3-Mq-SEW"/>
@@ -329,6 +345,7 @@
                                     <constraint firstItem="pYU-hh-TWd" firstAttribute="centerY" secondItem="V0u-Lj-EAm" secondAttribute="centerY" id="Sw0-uo-Ard"/>
                                     <constraint firstItem="nL1-xp-WL3" firstAttribute="height" secondItem="P2k-PZ-OTT" secondAttribute="height" id="Ta4-23-d6c"/>
                                     <constraint firstItem="y9w-Hp-1lZ" firstAttribute="leading" secondItem="QbF-YH-WVv" secondAttribute="leading" constant="12" id="U5W-n4-IV7"/>
+                                    <constraint firstItem="Hln-5a-a4u" firstAttribute="height" secondItem="p1x-xo-bSc" secondAttribute="height" id="Uq2-mO-jTh"/>
                                     <constraint firstItem="V0u-Lj-EAm" firstAttribute="centerY" secondItem="MgV-tc-doc" secondAttribute="centerY" id="VCs-8K-weR"/>
                                     <constraint firstItem="6N3-Cu-sCQ" firstAttribute="top" secondItem="DO2-2i-m2S" secondAttribute="bottom" id="W5x-fe-KPd"/>
                                     <constraint firstItem="kLJ-cS-4gc" firstAttribute="height" secondItem="MgV-tc-doc" secondAttribute="height" id="WMt-Jk-U86"/>
@@ -428,6 +445,29 @@
                             <constraint firstAttribute="trailingMargin" secondItem="QbF-YH-WVv" secondAttribute="trailing" id="xb4-XJ-wKg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="assignmentsMaxTextField" destination="lDL-qn-Afh" id="qY5-5V-0AG"/>
+                        <outlet property="assignmentsPercentTextField" destination="iOB-wH-pW9" id="VpB-aS-DZg"/>
+                        <outlet property="assignmentsPointTextField" destination="kLJ-cS-4gc" id="BVN-yc-vYw"/>
+                        <outlet property="courseFourGradeImageView" destination="G2Y-gm-5BV" id="4QB-FG-iGC"/>
+                        <outlet property="courseFourLabel" destination="nMS-jt-yNE" id="eZA-Vv-zhS"/>
+                        <outlet property="courseOneGradeImageView" destination="aLO-Av-WCJ" id="FzR-Wc-Rib"/>
+                        <outlet property="courseOneLabel" destination="6N3-Cu-sCQ" id="Vrc-bE-AWG"/>
+                        <outlet property="courseThreeGradeImageView" destination="9Ng-rF-7Mr" id="KuX-Uj-WN0"/>
+                        <outlet property="courseThreeLabel" destination="uRe-QN-bln" id="sjG-Gy-XPn"/>
+                        <outlet property="courseTitleTextField" destination="yVB-u0-eCm" id="vRT-pr-luh"/>
+                        <outlet property="courseTwoGradeImageView" destination="AGy-2L-Cvj" id="Jih-cE-hhc"/>
+                        <outlet property="courseTwoLabel" destination="fEE-3C-pGH" id="GU0-Ax-3hb"/>
+                        <outlet property="creditAmountTextField" destination="LSm-TJ-II0" id="4e8-dy-QGI"/>
+                        <outlet property="deleteCourseButton" destination="p1x-xo-bSc" id="pWs-ex-AtL"/>
+                        <outlet property="deleteCourseNumberTextField" destination="Hln-5a-a4u" id="Oma-L8-AHa"/>
+                        <outlet property="finalMaxTextField" destination="ofK-AH-ZLN" id="38R-ms-faE"/>
+                        <outlet property="finalPercentTextField" destination="b6j-oR-6DA" id="JOW-HG-9LO"/>
+                        <outlet property="finalPointTextField" destination="O08-a6-hV6" id="uoh-2W-ckn"/>
+                        <outlet property="midtermMaxTextField" destination="PT6-5u-izI" id="Tac-Tn-cZq"/>
+                        <outlet property="midtermPercentTextField" destination="txG-Ua-x3S" id="PlA-Yj-k3U"/>
+                        <outlet property="midtermPointTextField" destination="bu5-23-zQ9" id="k5D-vq-gia"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
