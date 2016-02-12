@@ -93,25 +93,75 @@ class ViewController: UIViewController {
         courseOneLabel.text = ""
         courseOneGradeImageView.image = nil
         courseTwoLabel.text = ""
-        courseTwoGradeImageView = nil
+        courseTwoGradeImageView.image = nil
         courseThreeLabel.text = ""
         courseThreeGradeImageView.image = nil
         courseFourLabel.text = ""
         courseFourGradeImageView.image = nil
         
-        for course in courses {
-            courseOneLabel.text = "1) \(course.courseTitle!) | \(course.numberOfCredits!)"
-            if course.grade >= 90{
-                courseOneGradeImageView.image = UIImage(named: "grade_a")
-            } else if course.grade >= 80 {
-                courseOneGradeImageView.image = UIImage(named: "grade_b")
-            } else if course.grade >= 70 {
-                courseOneGradeImageView.image = UIImage(named: "grade_c")
-            } else if course.grade >= 60 {
-                courseOneGradeImageView.image = UIImage(named: "grade_d")
-            } else if course.grade < 60 {
-                courseOneGradeImageView.image = UIImage(named: "grade_f")
+        for (index, course) in courses.enumerate() {
+            switch index {
+            case 0:
+                courseOneLabel.text = "1) \(course.courseTitle!) | \(course.numberOfCredits!)"
+                if course.grade >= 90{
+                    courseOneGradeImageView.image = UIImage(named: "grade_a")
+                } else if course.grade >= 80 {
+                    courseOneGradeImageView.image = UIImage(named: "grade_b")
+                } else if course.grade >= 70 {
+                    courseOneGradeImageView.image = UIImage(named: "grade_c")
+                } else if course.grade >= 60 {
+                    courseOneGradeImageView.image = UIImage(named: "grade_d")
+                } else if course.grade < 60 {
+                    courseOneGradeImageView.image = UIImage(named: "grade_f")
+                }
+                break
+            case 1:
+                courseTwoLabel.text = "2) \(course.courseTitle!) | \(course.numberOfCredits!)"
+                if course.grade >= 90{
+                    courseTwoGradeImageView.image = UIImage(named: "grade_a")
+                } else if course.grade >= 80 {
+                    courseTwoGradeImageView.image = UIImage(named: "grade_b")
+                } else if course.grade >= 70 {
+                    courseTwoGradeImageView.image = UIImage(named: "grade_c")
+                } else if course.grade >= 60 {
+                    courseTwoGradeImageView.image = UIImage(named: "grade_d")
+                } else if course.grade < 60 {
+                    courseTwoGradeImageView.image = UIImage(named: "grade_f")
+                }
+                break
+            case 2:
+                courseThreeLabel.text = "3) \(course.courseTitle!) | \(course.numberOfCredits!)"
+                if course.grade >= 90{
+                    courseThreeGradeImageView.image = UIImage(named: "grade_a")
+                } else if course.grade >= 80 {
+                    courseThreeGradeImageView.image = UIImage(named: "grade_b")
+                } else if course.grade >= 70 {
+                    courseThreeGradeImageView.image = UIImage(named: "grade_c")
+                } else if course.grade >= 60 {
+                    courseThreeGradeImageView.image = UIImage(named: "grade_d")
+                } else if course.grade < 60 {
+                    courseThreeGradeImageView.image = UIImage(named: "grade_f")
+                }
+                break
+            case 3:
+                courseFourLabel.text = "4) \(course.courseTitle!) | \(course.numberOfCredits!)"
+                if course.grade >= 90{
+                    courseFourGradeImageView.image = UIImage(named: "grade_a")
+                } else if course.grade >= 80 {
+                    courseFourGradeImageView.image = UIImage(named: "grade_b")
+                } else if course.grade >= 70 {
+                    courseFourGradeImageView.image = UIImage(named: "grade_c")
+                } else if course.grade >= 60 {
+                    courseFourGradeImageView.image = UIImage(named: "grade_d")
+                } else if course.grade < 60 {
+                    courseFourGradeImageView.image = UIImage(named: "grade_f")
+                }
+                break
+            default:
+                //nothing
+                break
             }
+            
         }
     }
 
