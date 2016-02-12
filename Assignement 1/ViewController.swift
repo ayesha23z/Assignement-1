@@ -33,6 +33,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var courseFourGradeImageView: UIImageView!
     @IBOutlet weak var deleteCourseButton: UIButton!
     
+    var courses = [Course]()//empty array
     
     
     
@@ -47,7 +48,7 @@ class ViewController: UIViewController {
     @IBAction func addCoursePress(sender: AnyObject) {
         print("Hello")
         let course = Course()
-        let assignment = Assessment()
+        let assignment = Assessment()//empty assessment object (assignment)
         let midterm = Assessment()
         let final = Assessment()
         
@@ -58,30 +59,60 @@ class ViewController: UIViewController {
         course.courseTitle = courseTitleTextField.text
         course.numberOfCredits = Int(creditAmountTextField.text!)
         
-        assignment.point = Int(assignmentsPointTextField.text!)
-        assignment.max = Int(assignmentsMaxTextField.text!)
-        assignment.percent = Int(assignmentsPercentTextField.text!)
+        assignment.point = Double(assignmentsPointTextField.text!)//gets data for assignments
+        assignment.max = Double(assignmentsMaxTextField.text!)
+        assignment.percent = Double(assignmentsPercentTextField.text!)
         
-        midterm.point = Int(midtermPointTextField.text!)
-        midterm.max = Int(midtermMaxTextField.text!)
-        midterm.percent = Int(midtermPercentTextField.text!)
+        midterm.point = Double(midtermPointTextField.text!)
+        midterm.max = Double(midtermMaxTextField.text!)
+        midterm.percent = Double(midtermPercentTextField.text!)
         
-        final.point = Int(finalPointTextField.text!)
-        final.max = Int(finalMaxTextField.text!)
-        final.percent = Int(finalPercentTextField.text!)
+        final.point = Double(finalPointTextField.text!)
+        final.max = Double(finalMaxTextField.text!)
+        final.percent = Double(finalPercentTextField.text!)
         
-        course.assignments = assignment
+        course.assignments = assignment //gives assignment data to course
         course.midterm = midterm
         course.final = final
         
-        
+        course.finalizeGrade()
+        print(course.grade)
+        courses.append(course)
+        courseDisplay()
         
         
     }
     
     @IBAction func deleteCoursePressed(sender: AnyObject) {
+        let deleteCourseNumber = Int(deleteCourseNumberTextField.text!)
+        courses.removeAtIndex(deleteCourseNumber! - 1)
+        courseDisplay()
+    }
     
+    func courseDisplay(){
+        courseOneLabel.text = ""
+        courseOneGradeImageView.image = nil
+        courseTwoLabel.text = ""
+        courseTwoGradeImageView = nil
+        courseThreeLabel.text = ""
+        courseThreeGradeImageView.image = nil
+        courseFourLabel.text = ""
+        courseFourGradeImageView.image = nil
         
+        for course in courses {
+            courseOneLabel.text = "1) \(course.courseTitle!) | \(course.numberOfCredits!)"
+            if course.grade >= 90{
+                courseOneGradeImageView.image = UIImage(named: "grade_a")
+            } else if course.grade >= 80 {
+                courseOneGradeImageView.image = UIImage(named: "grade_b")
+            } else if course.grade >= 70 {
+                courseOneGradeImageView.image = UIImage(named: "grade_c")
+            } else if course.grade >= 60 {
+                courseOneGradeImageView.image = UIImage(named: "grade_d")
+            } else if course.grade < 60 {
+                courseOneGradeImageView.image = UIImage(named: "grade_f")
+            }
+        }
     }
 
 }

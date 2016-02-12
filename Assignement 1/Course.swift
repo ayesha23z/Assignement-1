@@ -16,6 +16,14 @@ class Course{
     var midterm: Assessment?
     var final: Assessment?
     
-    
-    
+    func finalizeGrade() {
+        
+        let assignmentFinal = assignments!.point! / assignments!.max! * assignments!.percent!
+        let midtermFinal = midterm!.point! / midterm!.max! * midterm!.percent!
+        let finalFinal = final!.point! / final!.max! * final!.percent!
+        let totalScore =  assignmentFinal + midtermFinal + finalFinal
+        
+        grade = totalScore
+    }
+
 }

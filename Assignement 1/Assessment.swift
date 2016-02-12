@@ -10,7 +10,7 @@ import Foundation
 
 class Assessment{
     var type: String?
-    var point: Int?
-    var max: Int?
-    var percent: Int?
+    var point: Double?
+    var max: Double?
+    var percent: Double?
 }
