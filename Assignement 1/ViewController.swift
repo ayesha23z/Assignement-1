@@ -52,12 +52,13 @@ class ViewController: UIViewController {
         let midterm = Assessment()
         let final = Assessment()
         
-        if courseTitleTextField.text == nil || courseTitleTextField.text == ""{
+        if courseTitleTextField.text == nil || courseTitleTextField.text == ""//alert to make sure there is a course title
+        {
             alertForString("Enter a course name to continue.")
             return
         }
         
-        if (courses.count >= 4)
+        if (courses.count >= 4) //alert if user attempts to add 5th class
         {
             alertForString("Cannot enter more than 4 courses.")
             return
@@ -71,7 +72,7 @@ class ViewController: UIViewController {
         assignment.point = Double(assignmentsPointTextField.text!)//gets data for assignments
         assignment.max = Double(assignmentsMaxTextField.text!)
         assignment.percent = Double(assignmentsPercentTextField.text!)
-        if (assignment.point > assignment.max){
+        if (assignment.point > assignment.max){ //alert if Assignment points are more than max points
             alertForString("Assignment points cannot exceed the max points.")
             return
         }
@@ -79,7 +80,8 @@ class ViewController: UIViewController {
         midterm.point = Double(midtermPointTextField.text!)
         midterm.max = Double(midtermMaxTextField.text!)
         midterm.percent = Double(midtermPercentTextField.text!)
-        if (midterm.point > midterm.max){
+        if (midterm.point > midterm.max){ //alert if Midterm points are more than max points
+
             alertForString("Midterm points cannot exceed max points.")
             return
         }
@@ -87,12 +89,12 @@ class ViewController: UIViewController {
         final.point = Double(finalPointTextField.text!)
         final.max = Double(finalMaxTextField.text!)
         final.percent = Double(finalPercentTextField.text!)
-        if (final.point > final.max){
+        if (final.point > final.max){//alert if Final points are more than max points
             alertForString("Final points cannot exceed max points.")
             return
         }
         
-        if (assignment.percent! + midterm.percent! + final.percent! != 100){
+        if (assignment.percent! + midterm.percent! + final.percent! != 100){ //alert if percent total is less than 100%
             alertForString("Percent totals must equal 100.")
             return
         }
@@ -112,7 +114,7 @@ class ViewController: UIViewController {
     @IBAction func deleteCoursePressed(sender: AnyObject) {
         let deleteCourseNumber = Int(deleteCourseNumberTextField.text!)
         if (deleteCourseNumber > courses.count) || deleteCourseNumber < 1 || deleteCourseNumber == nil {
-            alertForString("Course id not found")
+            alertForString("Course id not found")//alert if user tries to delete a course that does not exist
             return
         }
         courses.removeAtIndex(deleteCourseNumber! - 1)
