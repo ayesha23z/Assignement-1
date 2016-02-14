@@ -20,7 +20,7 @@
 /* Begin PBXFileReference section */
 		6A4BADBC1C6C0D3F00D333A6 /* Assessment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assessment.swift; sourceTree = "<group>"; };
 		6A4BADBE1C6C156D00D333A6 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
-		6A87CD271C68FC6C0061B636 /* Assignement 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assignement 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A87CD271C68FC6C0061B636 /* GPA Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GPA Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A87CD2A1C68FC6C0061B636 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A87CD2C1C68FC6C0061B636 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6A87CD2F1C68FC6C0061B636 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		6A87CD281C68FC6C0061B636 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6A87CD271C68FC6C0061B636 /* Assignement 1.app */,
+				6A87CD271C68FC6C0061B636 /* GPA Calculator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,7 +90,7 @@
 			);
 			name = "Assignement 1";
 			productName = "Assignement 1";
-			productReference = 6A87CD271C68FC6C0061B636 /* Assignement 1.app */;
+			productReference = 6A87CD271C68FC6C0061B636 /* GPA Calculator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -264,7 +264,7 @@
 				INFOPLIST_FILE = "Assignement 1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CL.Assignement-1";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "GPA Calculator";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -276,7 +276,7 @@
 				INFOPLIST_FILE = "Assignement 1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CL.Assignement-1";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "GPA Calculator";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
