@@ -272,15 +272,15 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPA:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0t-gT-MuI">
                                         <rect key="frame" x="266" y="346" width="30" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <color key="textColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hln-5a-a4u">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hln-5a-a4u">
                                         <rect key="frame" x="168" y="392" width="25" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="25" id="Prq-c5-aPL"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
@@ -467,6 +467,7 @@
                         <outlet property="finalMaxTextField" destination="ofK-AH-ZLN" id="38R-ms-faE"/>
                         <outlet property="finalPercentTextField" destination="b6j-oR-6DA" id="JOW-HG-9LO"/>
                         <outlet property="finalPointTextField" destination="O08-a6-hV6" id="uoh-2W-ckn"/>
+                        <outlet property="gpaUILabel" destination="l0t-gT-MuI" id="yJY-Qi-jcT"/>
                         <outlet property="midtermMaxTextField" destination="PT6-5u-izI" id="Tac-Tn-cZq"/>
                         <outlet property="midtermPercentTextField" destination="txG-Ua-x3S" id="PlA-Yj-k3U"/>
                         <outlet property="midtermPointTextField" destination="bu5-23-zQ9" id="k5D-vq-gia"/>

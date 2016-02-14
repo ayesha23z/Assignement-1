@@ -15,6 +15,9 @@ class Course{
     var assignments: Assessment?
     var midterm: Assessment?
     var final: Assessment?
+    var gradeInScale: Double?
+    var points: Double?
+    
     
     func finalizeGrade() {
         
@@ -25,5 +28,8 @@ class Course{
         
         grade = totalScore
     }
-
+    
+    func gpaPoints(){
+        points = gradeInScale! * Double(numberOfCredits!)
+    }
 }
