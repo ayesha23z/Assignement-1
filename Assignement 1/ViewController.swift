@@ -52,24 +52,50 @@ class ViewController: UIViewController {
         let midterm = Assessment()
         let final = Assessment()
         
-        if courseTitleTextField.text == nil{
-            print("Enter a course name to continue")
+        if courseTitleTextField.text == nil || courseTitleTextField.text == ""{
+            alertForString("Enter a course name to continue.")
             return
         }
+        
+        if (courses.count >= 4)
+        {
+            alertForString("Cannot enter more than 4 courses.")
+            return
+        }
+        
+ 
+        
         course.courseTitle = courseTitleTextField.text
         course.numberOfCredits = Int(creditAmountTextField.text!)
         
         assignment.point = Double(assignmentsPointTextField.text!)//gets data for assignments
         assignment.max = Double(assignmentsMaxTextField.text!)
         assignment.percent = Double(assignmentsPercentTextField.text!)
+        if (assignment.point > assignment.max){
+            alertForString("Assignment points cannot exceed the max points.")
+            return
+        }
         
         midterm.point = Double(midtermPointTextField.text!)
         midterm.max = Double(midtermMaxTextField.text!)
         midterm.percent = Double(midtermPercentTextField.text!)
+        if (midterm.point > midterm.max){
+            alertForString("Midterm points cannot exceed max points.")
+            return
+        }
         
         final.point = Double(finalPointTextField.text!)
         final.max = Double(finalMaxTextField.text!)
         final.percent = Double(finalPercentTextField.text!)
+        if (final.point > final.max){
+            alertForString("Final points cannot exceed max points.")
+            return
+        }
+        
+        if (assignment.percent! + midterm.percent! + final.percent! != 100){
+            alertForString("Percent totals must equal 100.")
+            return
+        }
         
         course.assignments = assignment //gives assignment data to course
         course.midterm = midterm
@@ -85,6 +111,10 @@ class ViewController: UIViewController {
     
     @IBAction func deleteCoursePressed(sender: AnyObject) {
         let deleteCourseNumber = Int(deleteCourseNumberTextField.text!)
+        if (deleteCourseNumber > courses.count) || deleteCourseNumber < 1 || deleteCourseNumber == nil {
+            alertForString("Course id not found")
+            return
+        }
         courses.removeAtIndex(deleteCourseNumber! - 1)
         courseDisplay()
     }
@@ -212,10 +242,13 @@ class ViewController: UIViewController {
         }else if gpa < 2.0 {
             gpaUILabel.textColor = UIColor.redColor()
         }
-
-        
-        
-   
+    }
+    
+    func alertForString(message: String) {
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .Alert)
+        let okAction = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
+        alert.addAction(okAction)
+        presentViewController(alert, animated: true, completion: nil)
     }
 
 }
