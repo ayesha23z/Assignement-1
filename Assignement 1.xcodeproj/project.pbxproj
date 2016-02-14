@@ -14,6 +14,7 @@
 		6A87CD301C68FC6C0061B636 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A87CD2E1C68FC6C0061B636 /* Main.storyboard */; };
 		6A87CD321C68FC6C0061B636 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A87CD311C68FC6C0061B636 /* Assets.xcassets */; };
 		6A87CD351C68FC6C0061B636 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A87CD331C68FC6C0061B636 /* LaunchScreen.storyboard */; };
+		6AD134061C704F8800330070 /* Milkshake.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6AD134051C704F8800330070 /* Milkshake.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		6A87CD311C68FC6C0061B636 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A87CD341C68FC6C0061B636 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A87CD361C68FC6C0061B636 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AD134051C704F8800330070 /* Milkshake.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Milkshake.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				6A4BADBC1C6C0D3F00D333A6 /* Assessment.swift */,
 				6A4BADBE1C6C156D00D333A6 /* Course.swift */,
 				6A87CD2E1C68FC6C0061B636 /* Main.storyboard */,
+				6AD134051C704F8800330070 /* Milkshake.ttf */,
 				6A87CD311C68FC6C0061B636 /* Assets.xcassets */,
 				6A87CD331C68FC6C0061B636 /* LaunchScreen.storyboard */,
 				6A87CD361C68FC6C0061B636 /* Info.plist */,
@@ -130,6 +133,7 @@
 			files = (
 				6A87CD351C68FC6C0061B636 /* LaunchScreen.storyboard in Resources */,
 				6A87CD321C68FC6C0061B636 /* Assets.xcassets in Resources */,
+				6AD134061C704F8800330070 /* Milkshake.ttf in Resources */,
 				6A87CD301C68FC6C0061B636 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +265,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CL.Assignement-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -272,6 +277,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CL.Assignement-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

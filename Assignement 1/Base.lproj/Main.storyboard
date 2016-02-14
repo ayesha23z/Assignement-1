@@ -6,6 +6,26 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Milkshake.ttf">
+            <string>Milkshake</string>
+            <string>Milkshake</string>
+            <string>Milkshake</string>
+            <string>Milkshake</string>
+            <string>Milkshake</string>
+            <string>Milkshake</string>
+            <string>Milkshake</string>
+            <string>Milkshake</string>
+            <string>Milkshake</string>
+            <string>Milkshake</string>
+            <string>Milkshake</string>
+            <string>Milkshake</string>
+            <string>Milkshake</string>
+            <string>Milkshake</string>
+            <string>Milkshake</string>
+            <string>Milkshake</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -16,27 +36,26 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gpa-calculator-title" translatesAutoresizingMaskIntoConstraints="NO" id="PkD-Cv-JpM">
-                                <rect key="frame" x="26" y="20" width="554" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main label" translatesAutoresizingMaskIntoConstraints="NO" id="PkD-Cv-JpM">
+                                <rect key="frame" x="22" y="20" width="282" height="84"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="efh-xP-wlP"/>
+                                    <constraint firstAttribute="height" constant="84" id="efh-xP-wlP"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QbF-YH-WVv" userLabel="gray background">
-                                <rect key="frame" x="20" y="128" width="560" height="425"/>
+                                <rect key="frame" x="16" y="111" width="288" height="425"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1x-xo-bSc">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1x-xo-bSc">
                                         <rect key="frame" x="8" y="392" width="150" height="25"/>
                                         <color key="backgroundColor" red="0.3411764705882353" green="0.75294117647058822" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="Kgs-SI-9tz"/>
                                             <constraint firstAttribute="height" constant="25" id="ULx-RN-5gG"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <state key="normal" title="Delete Course">
+                                        <state key="normal" image="garbage12">
                                             <color key="titleColor" red="0.066666666666666666" green="0.047058823529411764" blue="0.50588235294117645" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
@@ -44,140 +63,140 @@
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chalkboard" translatesAutoresizingMaskIntoConstraints="NO" id="1s3-tZ-PRH">
-                                        <rect key="frame" x="143" y="209" width="275" height="175"/>
+                                        <rect key="frame" x="7" y="209" width="275" height="175"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="275" id="KlO-B4-IwA"/>
                                             <constraint firstAttribute="height" constant="175" id="Z6O-UW-4sD"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRe-QN-bln">
-                                        <rect key="frame" x="201" y="301" width="133" height="14"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <rect key="frame" x="70" y="301" width="124" height="14"/>
+                                        <fontDescription key="fontDescription" name="Milkshake" family="Milkshake" pointSize="11"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMS-jt-yNE">
-                                        <rect key="frame" x="201" y="327" width="133" height="14"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <rect key="frame" x="70" y="327" width="124" height="14"/>
+                                        <fontDescription key="fontDescription" name="Milkshake" family="Milkshake" pointSize="11"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEE-3C-pGH">
-                                        <rect key="frame" x="201" y="275" width="133" height="14"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <rect key="frame" x="70" y="275" width="124" height="14"/>
+                                        <fontDescription key="fontDescription" name="Milkshake" family="Milkshake" pointSize="11"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Mobile Programming" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yVB-u0-eCm">
-                                        <rect key="frame" x="229" y="12" width="323" height="25"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <rect key="frame" x="120" y="12" width="160" height="25"/>
+                                        <fontDescription key="fontDescription" name="Milkshake" family="Milkshake" pointSize="11"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title of the course:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWC-6G-qiy">
-                                        <rect key="frame" x="12" y="12" width="212" height="25"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <rect key="frame" x="12" y="12" width="103" height="25"/>
+                                        <fontDescription key="fontDescription" name="Milkshake" family="Milkshake" pointSize="12"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assessment Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2k-PZ-OTT">
-                                        <rect key="frame" x="12" y="41" width="212" height="25"/>
+                                        <rect key="frame" x="12" y="41" width="103" height="25"/>
                                         <color key="backgroundColor" red="0.3411764706" green="0.75294117650000003" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="Milkshake" family="Milkshake" pointSize="13"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0u-Lj-EAm">
-                                        <rect key="frame" x="338" y="41" width="104" height="25"/>
+                                        <rect key="frame" x="175" y="41" width="50" height="25"/>
                                         <color key="backgroundColor" red="0.3411764706" green="0.75294117650000003" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="Milkshake" family="Milkshake" pointSize="13"/>
                                         <color key="textColor" red="0.082352941176470587" green="0.10588235294117647" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYU-hh-TWd">
-                                        <rect key="frame" x="448" y="41" width="104" height="25"/>
+                                        <rect key="frame" x="230" y="41" width="50" height="25"/>
                                         <color key="backgroundColor" red="0.3411764706" green="0.75294117650000003" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="Milkshake" family="Milkshake" pointSize="13"/>
                                         <color key="textColor" red="0.082352941176470587" green="0.10588235294117647" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Point" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MgV-tc-doc">
-                                        <rect key="frame" x="229" y="41" width="104" height="25"/>
+                                        <rect key="frame" x="120" y="41" width="50" height="25"/>
                                         <color key="backgroundColor" red="0.3411764706" green="0.75294117650000003" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="Milkshake" family="Milkshake" pointSize="13"/>
                                         <color key="textColor" red="0.082352941176470587" green="0.10588235294117647" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assignments" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nL1-xp-WL3">
-                                        <rect key="frame" x="12" y="74" width="212" height="25"/>
+                                        <rect key="frame" x="12" y="74" width="103" height="25"/>
                                         <color key="backgroundColor" red="0.3411764706" green="0.75294117650000003" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="Milkshake" family="Milkshake" pointSize="13"/>
                                         <color key="textColor" red="0.08235294371843338" green="0.10588235408067703" blue="0.55294120311737061" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="90" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kLJ-cS-4gc">
-                                        <rect key="frame" x="229" y="74" width="104" height="25"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <rect key="frame" x="120" y="74" width="50" height="25"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lDL-qn-Afh">
-                                        <rect key="frame" x="338" y="74" width="104" height="25"/>
+                                        <rect key="frame" x="175" y="74" width="50" height="25"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="50" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PT6-5u-izI">
-                                        <rect key="frame" x="338" y="107" width="104" height="25"/>
+                                        <rect key="frame" x="175" y="107" width="50" height="25"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ofK-AH-ZLN">
-                                        <rect key="frame" x="338" y="140" width="104" height="25"/>
+                                        <rect key="frame" x="175" y="140" width="50" height="25"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="20" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iOB-wH-pW9">
-                                        <rect key="frame" x="448" y="74" width="104" height="25"/>
+                                        <rect key="frame" x="230" y="74" width="50" height="25"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="40" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="txG-Ua-x3S">
-                                        <rect key="frame" x="448" y="107" width="104" height="25"/>
+                                        <rect key="frame" x="230" y="107" width="50" height="25"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="40" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b6j-oR-6DA">
-                                        <rect key="frame" x="448" y="140" width="104" height="25"/>
+                                        <rect key="frame" x="230" y="140" width="50" height="25"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Midterm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dr6-5V-mR1">
-                                        <rect key="frame" x="12" y="107" width="212" height="25"/>
+                                        <rect key="frame" x="12" y="107" width="103" height="25"/>
                                         <color key="backgroundColor" red="0.3411764706" green="0.75294117650000003" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="Milkshake" family="Milkshake" pointSize="13"/>
                                         <color key="textColor" red="0.082352943720000002" green="0.10588235410000001" blue="0.55294120309999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Final" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlW-cx-5dj">
-                                        <rect key="frame" x="12" y="140" width="212" height="25"/>
+                                        <rect key="frame" x="12" y="140" width="103" height="25"/>
                                         <color key="backgroundColor" red="0.3411764706" green="0.75294117650000003" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="Milkshake" family="Milkshake" pointSize="13"/>
                                         <color key="textColor" red="0.082352943720000002" green="0.10588235410000001" blue="0.55294120309999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="45" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bu5-23-zQ9">
-                                        <rect key="frame" x="229" y="107" width="104" height="25"/>
+                                        <rect key="frame" x="120" y="107" width="50" height="25"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="90" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O08-a6-hV6">
-                                        <rect key="frame" x="229" y="140" width="104" height="25"/>
+                                        <rect key="frame" x="120" y="140" width="50" height="25"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9w-Hp-1lZ">
-                                        <rect key="frame" x="12" y="173" width="212" height="25"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9w-Hp-1lZ">
+                                        <rect key="frame" x="12" y="173" width="103" height="25"/>
                                         <color key="backgroundColor" red="0.3411764706" green="0.75294117650000003" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <state key="normal" title="Add Course">
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <state key="normal" image="add139 (1)">
                                             <color key="titleColor" red="0.08235294371843338" green="0.10588235408067703" blue="0.55294120311737061" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
@@ -185,34 +204,28 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credits" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBF-ED-3ij">
-                                        <rect key="frame" x="229" y="173" width="213" height="25"/>
+                                        <rect key="frame" x="120" y="173" width="105" height="25"/>
                                         <color key="backgroundColor" red="0.3411764706" green="0.75294117650000003" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <fontDescription key="fontDescription" name="Milkshake" family="Milkshake" pointSize="12"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="4" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LSm-TJ-II0">
-                                        <rect key="frame" x="448" y="173" width="104" height="25"/>
+                                        <rect key="frame" x="230" y="173" width="50" height="25"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current List of Courses" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DO2-2i-m2S">
-                                        <rect key="frame" x="201" y="221" width="159" height="18"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6N3-Cu-sCQ">
-                                        <rect key="frame" x="201" y="249" width="133" height="14"/>
+                                        <rect key="frame" x="70" y="249" width="124" height="14"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="14" id="nrc-cb-844"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <fontDescription key="fontDescription" name="Milkshake" family="Milkshake" pointSize="11"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aLO-Av-WCJ">
-                                        <rect key="frame" x="336" y="244" width="24" height="24"/>
+                                        <rect key="frame" x="196" y="244" width="24" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="24" id="DAh-k8-zzV"/>
                                             <constraint firstAttribute="height" constant="24" id="eNe-23-KjE"/>
@@ -227,7 +240,7 @@
                                         </variation>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AGy-2L-Cvj">
-                                        <rect key="frame" x="336" y="270" width="24" height="24"/>
+                                        <rect key="frame" x="196" y="270" width="24" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="29" id="2Ds-4D-sZm"/>
                                             <constraint firstAttribute="width" constant="29" id="6lK-Ou-pXy"/>
@@ -242,7 +255,7 @@
                                         </variation>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Ng-rF-7Mr">
-                                        <rect key="frame" x="336" y="296" width="24" height="24"/>
+                                        <rect key="frame" x="196" y="296" width="24" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="29" id="6fi-l6-DdR"/>
                                             <constraint firstAttribute="width" constant="29" id="MvV-4Z-6Qs"/>
@@ -257,7 +270,7 @@
                                         </variation>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G2Y-gm-5BV">
-                                        <rect key="frame" x="336" y="322" width="24" height="24"/>
+                                        <rect key="frame" x="196" y="322" width="24" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="29" id="Uwl-Um-ite"/>
                                             <constraint firstAttribute="height" constant="28" id="anf-Mv-arf"/>
@@ -269,9 +282,9 @@
                                             </mask>
                                         </variation>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPA:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0t-gT-MuI">
-                                        <rect key="frame" x="266" y="346" width="30" height="16"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="gpa:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0t-gT-MuI">
+                                        <rect key="frame" x="134" y="346" width="21" height="20"/>
+                                        <fontDescription key="fontDescription" name="Milkshake" family="Milkshake" pointSize="13"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -283,6 +296,12 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current List of Courses" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DO2-2i-m2S">
+                                        <rect key="frame" x="70" y="222" width="150" height="24"/>
+                                        <fontDescription key="fontDescription" name="Milkshake" family="Milkshake" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.75686274509803919" green="0.75686274509803919" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -293,7 +312,7 @@
                                     <constraint firstItem="txG-Ua-x3S" firstAttribute="centerY" secondItem="PT6-5u-izI" secondAttribute="centerY" id="2qs-Fs-Xcr"/>
                                     <constraint firstItem="LSm-TJ-II0" firstAttribute="leading" secondItem="b6j-oR-6DA" secondAttribute="leading" id="3Dh-i5-6U8"/>
                                     <constraint firstItem="9Ng-rF-7Mr" firstAttribute="height" secondItem="AGy-2L-Cvj" secondAttribute="height" id="3OD-PQ-Ttw"/>
-                                    <constraint firstItem="6N3-Cu-sCQ" firstAttribute="top" secondItem="DO2-2i-m2S" secondAttribute="bottom" constant="10" id="3XP-ep-vvB"/>
+                                    <constraint firstItem="6N3-Cu-sCQ" firstAttribute="top" secondItem="DO2-2i-m2S" secondAttribute="bottom" constant="3" id="3XP-ep-vvB"/>
                                     <constraint firstItem="ofK-AH-ZLN" firstAttribute="centerY" secondItem="O08-a6-hV6" secondAttribute="centerY" id="40V-K9-ocK"/>
                                     <constraint firstItem="y9w-Hp-1lZ" firstAttribute="leading" secondItem="qlW-cx-5dj" secondAttribute="leading" id="43h-Vl-Thu"/>
                                     <constraint firstItem="uRe-QN-bln" firstAttribute="width" secondItem="fEE-3C-pGH" secondAttribute="width" id="4nX-El-Vyt"/>
@@ -338,7 +357,7 @@
                                     <constraint firstItem="qlW-cx-5dj" firstAttribute="top" secondItem="Dr6-5V-mR1" secondAttribute="bottom" constant="8" id="NSg-5u-q7a"/>
                                     <constraint firstItem="fEE-3C-pGH" firstAttribute="leading" secondItem="6N3-Cu-sCQ" secondAttribute="leading" id="OoF-6m-JlU"/>
                                     <constraint firstItem="Dr6-5V-mR1" firstAttribute="width" secondItem="nL1-xp-WL3" secondAttribute="width" id="OpB-LH-AvP"/>
-                                    <constraint firstItem="1s3-tZ-PRH" firstAttribute="top" secondItem="DO2-2i-m2S" secondAttribute="bottom" constant="-30" id="QB3-Vp-HhH"/>
+                                    <constraint firstItem="1s3-tZ-PRH" firstAttribute="top" secondItem="DO2-2i-m2S" secondAttribute="bottom" constant="-37" id="QB3-Vp-HhH"/>
                                     <constraint firstItem="b6j-oR-6DA" firstAttribute="centerY" secondItem="ofK-AH-ZLN" secondAttribute="centerY" id="R0P-nt-sGz"/>
                                     <constraint firstItem="MgV-tc-doc" firstAttribute="centerY" secondItem="P2k-PZ-OTT" secondAttribute="centerY" id="RLa-rF-tMd"/>
                                     <constraint firstItem="aLO-Av-WCJ" firstAttribute="trailing" secondItem="DO2-2i-m2S" secondAttribute="trailing" id="SMi-mU-YaC"/>
@@ -444,10 +463,11 @@
                             <constraint firstAttribute="leadingMargin" secondItem="QbF-YH-WVv" secondAttribute="leading" id="CRu-ZV-pma"/>
                             <constraint firstItem="PkD-Cv-JpM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="GmK-qf-2Co"/>
                             <constraint firstItem="PkD-Cv-JpM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="6" id="N7C-io-LAd"/>
-                            <constraint firstItem="QbF-YH-WVv" firstAttribute="top" secondItem="PkD-Cv-JpM" secondAttribute="bottom" constant="8" id="p7z-ZO-evl"/>
+                            <constraint firstItem="QbF-YH-WVv" firstAttribute="top" secondItem="PkD-Cv-JpM" secondAttribute="bottom" constant="7" id="p7z-ZO-evl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="QbF-YH-WVv" secondAttribute="trailing" id="xb4-XJ-wKg"/>
                         </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="assignmentsMaxTextField" destination="lDL-qn-Afh" id="qY5-5V-0AG"/>
                         <outlet property="assignmentsPercentTextField" destination="iOB-wH-pW9" id="VpB-aS-DZg"/>
@@ -479,7 +499,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="add139 (1)" width="24" height="24"/>
         <image name="chalkboard" width="446" height="295"/>
-        <image name="gpa-calculator-title" width="764" height="114"/>
+        <image name="garbage12" width="24" height="24"/>
+        <image name="main label" width="492" height="104"/>
     </resources>
 </document>

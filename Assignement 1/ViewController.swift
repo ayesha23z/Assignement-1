@@ -35,16 +35,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var gpaUILabel: UILabel!
     
     var courses = [Course]()//empty array
-    
-    
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        
-        
-    }
 
     @IBAction func addCoursePress(sender: AnyObject) {
         let course = Course()
@@ -63,10 +53,16 @@ class ViewController: UIViewController {
             alertForString("Cannot enter more than 4 courses.")
             return
         }
-        
- 
-        
+
         course.courseTitle = courseTitleTextField.text
+     
+        for course in courses {
+            if course.courseTitle == courseTitleTextField.text{ //alert if user tries to enter same class title twice
+            alertForString("Enter a different class title.")
+            return
+            }
+        }
+        
         course.numberOfCredits = Int(creditAmountTextField.text!)
         
         assignment.point = Double(assignmentsPointTextField.text!)//gets data for assignments
@@ -222,7 +218,7 @@ class ViewController: UIViewController {
     func displayGPA(){
         if courses.count < 1 {
             gpaUILabel.textColor = UIColor.whiteColor()
-            gpaUILabel.text = "GPA:"
+            gpaUILabel.text = "gpa:"
             return
         }
         var totalCredits = 0
@@ -234,7 +230,7 @@ class ViewController: UIViewController {
         }
     
         let gpa = totalPoints / (Double(totalCredits) * 4) * 4
-        gpaUILabel.text = String(format: "GPA: %0.2f", gpa)
+        gpaUILabel.text = String(format: "gpa: %0.2f", gpa)
         
         
         if gpa >= 3.0 {
