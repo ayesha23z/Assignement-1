@@ -35,6 +35,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var gpaUILabel: UILabel!
     
     var courses = [Course]()//empty array
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        deleteCourseButton.enabled = false
+        
+        let dismissRecognizer = UITapGestureRecognizer()
+        dismissRecognizer.addTarget(self, action: "hideKeyboard")
+        view.addGestureRecognizer(dismissRecognizer)
+    }
+    
+    func hideKeyboard() {
+        view.endEditing(true)
+    }
 
     @IBAction func addCoursePress(sender: AnyObject) {
         let course = Course()
@@ -104,7 +119,6 @@ class ViewController: UIViewController {
         courses.append(course)
         courseDisplay()
         
-        
     }
     
     @IBAction func deleteCoursePressed(sender: AnyObject) {
@@ -118,6 +132,13 @@ class ViewController: UIViewController {
     }
     
     func courseDisplay(){
+        if courses.isEmpty {
+            deleteCourseButton.enabled = false
+        } else {
+            deleteCourseButton.enabled = true
+        }
+        
+        
         courseOneLabel.text = ""
         courseOneGradeImageView.image = nil
         courseTwoLabel.text = ""
